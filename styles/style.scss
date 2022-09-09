@@ -11,6 +11,7 @@ sans-serif;
 font-family: 'Press Start 2P',
 cursive;
 */
+
 :root {
   --color-primary: #191d2b;
   --color-secondary: #8d1998;
@@ -56,13 +57,11 @@ section {
   top: 0;
   padding: 3rem 18rem;
 }
-
 .section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
 }
-
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
@@ -72,21 +71,20 @@ section {
   display: none;
   transform: translateY(0) scale(1);
 }
-
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
 }
-
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
 }
-
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
 }
+
+// Controlls
 
 .controlls {
   position: fixed;
@@ -94,27 +92,29 @@ section {
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
+
+  .active-btn {
+    background-color: var(--color-secondary) !important;
+    transition: all 0.4s ease-in-out;
+    i {
+      color: var(--color-white) !important;
+    }
+  }
+
+  .control {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: var(--color-grey-4);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.6rem 0rem;
+    box-shadow: var(--box-shadow-1);
+    color: var(--color-grey-1);
+  }
 }
-.controlls .active-btn {
-  background-color: var(--color-secondary) !important;
-  transition: all 0.4s ease-in-out;
-}
-.controlls .active-btn i {
-  color: var(--color-white) !important;
-}
-.controlls .control {
-  cursor: pointer;
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: var(--color-grey-4);
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0.6rem 0rem;
-  box-shadow: var(--box-shadow-1);
-  color: var(--color-grey-1);
-}/*# sourceMappingURL=style.css.map */
