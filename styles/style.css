@@ -71,26 +71,57 @@ section {
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #8d1998;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background: linear-gradient(147deg, #828284 50%, #33007b 51%);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #c160ca;
 }
 
+main > .active {
+  display: block;
+  -webkit-animation: dropSection 1s linear 0s 1 normal forwards;
+          animation: dropSection 1s linear 0s 1 normal forwards;
+}
+
+@-webkit-keyframes dropSection {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dropSection {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
 .controlls {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: fixed;
-  z-index: 100;
+  z-index: 1;
   top: 50%;
   right: 5%;
   transform: translateY(-50%);

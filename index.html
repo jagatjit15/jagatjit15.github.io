@@ -27,47 +27,55 @@
 
 <body class="main-content">
 
-    <header class="section sec1 header active">
+    <header class="section sec1 header active" id="home">
+        <div class="left-header">
+            <div class="img-shape"></div>
+            <div class="image-div">
+                <img src="" alt="">
+            </div>
 
+
+        </div>
+        <div class="right-header"></div>
     </header>
 
     <main>
-        <section class="section sec2 about"></section>
-        <section class="section sec3 portfolio"></section>
-        <section class="section sec4 skills"></section>
-        <section class="section sec5 contact"></section>
+        <section class="section sec2 about" id="about"></section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 skills" id="skills"></section>
+        <section class="section sec5 contact" id="contact"></section>
     </main>
 
 
     <div class="controlls">
 
-        <div class="control control-1 active-btn">
+        <div class="control control-1 active-btn" data-id="home">
 
-            <i class="fa-solid fa-house-user"></i>
-
-        </div>
-
-        <div class="control control-2 ">
-
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-house-user" data-id="home"></i>
 
         </div>
 
-        <div class="control control-3 ">
+        <div class="control control-2 " data-id="about">
 
-            <i class="fa-solid fa-briefcase"></i>
-
-        </div>
-
-        <div class="control control-4 ">
-
-            <i class="fa-solid fa-brain"></i>
+            <i class="fa-solid fa-user" data-id="about"></i>
 
         </div>
 
-        <div class="control control-5 ">
+        <div class="control control-3 " data-id="portfolio">
 
-            <i class="fa-solid fa-address-book"></i>
+            <i class="fa-solid fa-briefcase" data-id="portfolio"></i>
+
+        </div>
+
+        <div class="control control-4 " data-id="skills">
+
+            <i class="fa-solid fa-brain" data-id="skills"></i>
+
+        </div>
+
+        <div class="control control-5 " data-id="contact">
+
+            <i class="fa-solid fa-address-book" data-id="contact"></i>
 
         </div>
 
@@ -75,5 +83,6 @@
 
 
 </body>
+<script src="app.js"></script>
 
 </html>
