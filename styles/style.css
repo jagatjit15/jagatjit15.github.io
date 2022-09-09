@@ -6,14 +6,13 @@
 }
 
 /*
-font-family: 'Oswald',
-sans-serif;
+
 font-family: 'Press Start 2P',
 cursive;
 */
 :root {
-  --color-primary: #191d2b;
-  --color-secondary: #8d1998;
+  --color-primary: #030b2b;
+  --color-secondary: #7f058d;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -24,12 +23,12 @@ cursive;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --box-shadow-1: 0 3px 17px rgba(0, 0, 0, 0.3);
 }
 
 body {
   background-color: var(--color-primary);
-  font-family: "Righteous", cursive;
+  font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
@@ -45,7 +44,9 @@ a {
 header {
   height: 100vh;
   color: var(--color-white);
+  width: 100%;
   overflow: hidden;
+  padding: 0 !important;
 }
 
 section {
@@ -64,32 +65,28 @@ section {
 }
 
 .sec1 {
-  display: none;
+  display: block;
   transform: translateY(0) scale(1);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #8d1998;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background: linear-gradient(147deg, #828284 50%, #33007b 51%);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #c160ca;
 }
 
 main > .active {
