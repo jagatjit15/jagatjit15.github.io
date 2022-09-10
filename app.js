@@ -60,5 +60,5 @@ spans.forEach((span, idx) => {
   // Initial animation
   setTimeout(() => {
     span.classList.add("active");
-  }, 750 * (idx + 1));
+  }, 750 * (idx + 2));
 });
