@@ -446,7 +446,6 @@ main > .active {
 }
 .header-content .right-header .social-medias a {
   font-size: 5rem;
-  transition: all 0.5s ease-in-out;
   position: relative;
 }
 .header-content .right-header .social-medias a .fa-linkedin {
@@ -465,7 +464,7 @@ main > .active {
   -webkit-text-fill-color: transparent;
 }
 .header-content .right-header .social-medias a .fa-brands {
-  transition: all 1s ease-in-out;
+  transition: all 1s ease;
 }
 .header-content .right-header .social-medias a .fa-brands:hover {
   -webkit-text-fill-color: var(--color-grey-4);
@@ -581,8 +580,8 @@ main .section .bio-data p q span {
 }
 main .section .experience {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 50%;
+  grid-template-columns: repeat(4, 1fr);
+  width: 60%;
   margin: auto;
   margin-top: 3rem;
   text-align: center;
@@ -628,7 +627,7 @@ main .section .educations {
 main .section .educations .edu-title {
   text-align: center;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 2rem;
   text-shadow: 0 0 10px var(--color-grey-6);
