@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jagatjit-Barik/Portfolio</title>
+    <!-- Favicon link  -->
+    <link rel="icon" type="image/x-icon" href="./img/JB.png">
+
 
     <!-- Css file link -->
     <link rel="stylesheet" href="styles/style.css">
@@ -14,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600&family=Poppins:wght@200;300;400&display=swap"
         rel="stylesheet">
 
     <!-- Font awesome link -->
@@ -26,7 +29,7 @@
 </head>
 
 <body class="main-content">
-    <header class="section sec1 header active" id="home">
+    <header class="section sec1 header " id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
@@ -203,7 +206,91 @@
         </section>
 
         <!-- This is  contact section -->
-        <section class="section sec5 contact" id="contact"></section>
+        <section class="section sec5 contact active" id="contact">
+            <div class="m-h-title">
+                <h1 class="_title">
+                    <span class="t-1">
+                        establish a
+                    </span>
+                    <span class="t-2">
+                        rapport
+                    </span>
+                </h1>
+            </div>
+            <div class="contact_Container">
+                <div class="address_cont">
+                    <div class="field_title">
+                        <h3>My Address</h3>
+                    </div>
+                    <div class="adrs_field">
+                        <div>
+                            <span class="tn">Name :</span>
+                            <span class="tv">Jagatjit Barik</span>
+                        </div>
+                        <div>
+                            <span class="tn">Dist. :</span>
+                            <span class="tv">Baleshwar</span>
+                        </div>
+                        <div>
+                            <span class="tn">State :</span>
+                            <span class="tv">Odisha</span>
+                        </div>
+                        <div>
+                            <span class="tn">Pin :</span>
+                            <span class="tv">756083</span>
+                        </div>
+                        <div>
+                            <span class="tn">Email :</span>
+                            <span class="tv">
+                                <address>
+                                    <a href="mailto:itsjagatjitbarik@gmail.com">itsjagatjitbarik@gmail.com</a>
+                                </address>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="tn">Mobile :</span>
+                            <span class="tv">
+                                <address>
+                                    <a href="tel:8280922903">8280922903</a>
+                                </address>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mail_cont">
+                    <div class="field_title">
+                        <h3>Contact Me</h3>
+                    </div>
+                    <form action="https://formsubmit.co/itsjagatjitbarik@gmail.com" method="POST">
+                        <div class="mail_field">
+                            <div>
+                                <input type="hidden" name="_subject" value="Email from Portfolio!">
+                            </div>
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" title="name" placeholder="Enter Name" id="name" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" title="email" placeholder="Enter Email" id="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">MobileNo</label>
+                                <input type="tel" title="tel" placeholder="Enter MobileNo." id="phone" required>
+                            </div>
+                            <div>
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="send-btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+
+        </section>
     </main>
 
 

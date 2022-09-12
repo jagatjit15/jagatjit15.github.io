@@ -13,7 +13,7 @@ cursive;
 
 :root {
   --color-primary: #9c9c9c;
-  --color-secondary: #3c0042;
+  --color-secondary: #7b0986;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-sec2: #095faada;
@@ -154,7 +154,7 @@ main > .active {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: var(--color-primary);
+        color: var(--color-white);
         border-radius: 35% 65% 33% 67% / 100% 0% 100% 0%;
         z-index: -100;
         animation: sliding 0.4s linear 0s 1 normal forwards;
@@ -460,8 +460,8 @@ main > .active {
       cursor: pointer;
       border-left: 3px solid var(--color-secondary);
       border-top: 3px solid var(--color-secondary);
-      border-right: 3px solid var(--color-grey-3);
-      border-bottom: 3px solid var(--color-grey-3);
+      border-right: 3px solid var(--color-white);
+      border-bottom: 3px solid var(--color-white);
       border-radius: 10px;
       background-color: var(--light-secondary);
       position: relative;
@@ -470,8 +470,8 @@ main > .active {
         border: none;
         border-right: 3px solid var(--color-secondary);
         border-bottom: 3px solid var(--color-secondary);
-        border-left: 3px solid var(--color-grey-3);
-        border-top: 3px solid var(--color-grey-3);
+        border-left: 3px solid var(--color-white);
+        border-top: 3px solid var(--color-white);
       }
 
       span {
@@ -497,7 +497,6 @@ main > .active {
 // About section styling
 main {
   .section {
-    user-select: none;
     .m-h-title {
       user-select: none;
       display: block;
@@ -508,7 +507,7 @@ main {
         font-size: 5rem;
         text-transform: uppercase;
         transition: all 1.2s ease-in-out;
-        text-shadow: 0 0 10px #fff;
+        text-shadow: 0 0 5px var(--color-black);
         .t-1 {
           color: var(--color-secondary);
           text-decoration: underline var(--color-white);
@@ -532,18 +531,22 @@ main {
       }
     }
     .bio-data {
-      font-family: "Caveat", cursive;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
+      user-select: none;
+      font-family: "Poppins", sans-serif;
+      text-align: justify;
+      font-size: 1.2rem;
+      font-weight: 600;
       color: var(--color-white);
-      text-shadow: 0 0 10px var(--color-grey-6);
+      text-shadow: 0 0 10px var(--color-black);
+      background-color: var(--color-grey-5);
+      padding: 2rem 2.5rem;
+      border-radius: 2rem;
+
       p {
         q {
           span {
-            font-size: 2.3rem;
+            text-decoration-line: underline;
             color: var(--color-secondary);
-            text-shadow: 0 0 10px #fff;
           }
         }
       }
@@ -629,7 +632,11 @@ main {
         }
       }
     }
+
+    // Skills section of main section
+
     .techLogoes {
+      user-select: none;
       width: 100%;
       margin-top: 1.5rem;
       display: flex;
@@ -649,6 +656,7 @@ main {
           border-radius: 10px;
           transition: 0.2s ease-in-out;
           position: relative;
+          overflow: hidden;
           &:hover {
             cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -712,6 +720,106 @@ main {
           }
           img {
             width: 100px;
+          }
+        }
+      }
+    }
+
+    // Contact form section of main section
+
+    .contact_Container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      grid-gap: 2rem;
+      .field_title {
+        font-size: 1.7rem;
+      }
+      .address_cont,
+      .mail_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        grid-gap: 20px;
+        background-color: var(--color-grey-3);
+        border: 2px solid var(--color-white);
+        border-radius: 20px;
+        padding: 3rem 0;
+        font-weight: 100;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        .adrs_field {
+          width: 60%;
+          div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: left;
+            grid-gap: 10px;
+            width: 100%;
+            span {
+              font-size: 1.5rem;
+              address {
+                a {
+                  font-size: 1rem;
+                  font-weight: 100;
+                  color: var(--color-white);
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .mail_cont {
+        .mail_field {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          gap: 1rem;
+          align-items: center;
+          width: 100%;
+
+          div {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            input,
+            textarea {
+              height: 2rem;
+              outline: none;
+              padding: 0 1rem;
+              background-color: var(--color-primary);
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              &::placeholder {
+                color: var(--color-white);
+              }
+              &:focus {
+                border: 2px solid #0570e6;
+              }
+            }
+          }
+        }
+        .send-btn {
+          width: 80%;
+          display: flex;
+          gap: 2rem;
+          justify-content: flex-start;
+          button {
+            width: 30%;
+            padding: 0.4rem 0rem;
+            font-size: 1rem;
+            background-color: #0570e6;
+            color: var(--color-white);
+            cursor: pointer;
+            border: none;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+              rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           }
         }
       }
