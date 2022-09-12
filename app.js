@@ -3,6 +3,8 @@ const btnParent = document.querySelectorAll(".controlls");
 const btnChild = document.querySelectorAll(".control");
 const main = document.querySelector(".main-content");
 
+// Sections transition function
+
 function pageTransition() {
   //on button click add active class
   for (let i = 0; i < btnChild.length; i++) {
