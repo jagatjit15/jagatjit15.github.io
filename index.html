@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600&family=Poppins:wght@200;300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap"
         rel="stylesheet">
 
     <!-- Font awesome link -->
@@ -210,10 +210,10 @@
             <div class="m-h-title">
                 <h1 class="_title">
                     <span class="t-1">
-                        establish a
+                        Contact
                     </span>
                     <span class="t-2">
-                        rapport
+                        me
                     </span>
                 </h1>
             </div>
@@ -240,7 +240,7 @@
                             <span class="tv">756083</span>
                         </div>
                         <div>
-                            <span class="tn">Email :</span>
+                            <span class="tn">Email</span>
                             <span class="tv">
                                 <address>
                                     <a href="mailto:itsjagatjitbarik@gmail.com">itsjagatjitbarik@gmail.com</a>
@@ -248,7 +248,7 @@
                             </span>
                         </div>
                         <div>
-                            <span class="tn">Mobile :</span>
+                            <span class="tn">Mobile</span>
                             <span class="tv">
                                 <address>
                                     <a href="tel:8280922903">8280922903</a>
@@ -259,32 +259,25 @@
                 </div>
                 <div class="mail_cont">
                     <div class="field_title">
-                        <h3>Contact Me</h3>
+                        <h3>Email Me</h3>
                     </div>
-                    <form action="https://formsubmit.co/itsjagatjitbarik@gmail.com" method="POST">
+                    <form action="" id="form">
                         <div class="mail_field">
                             <div>
-                                <input type="hidden" name="_subject" value="Email from Portfolio!">
+                                <input type="text" title="from_name" placeholder="Enter Name" id="from_name" required>
                             </div>
                             <div>
-                                <label for="name">Name</label>
-                                <input type="text" title="name" placeholder="Enter Name" id="name" required>
+                                <input type="email" title="email_id" placeholder="Enter Email" id="email_id" required>
                             </div>
                             <div>
-                                <label for="email">Email</label>
-                                <input type="email" title="email" placeholder="Enter Email" id="email" required>
+                                <input type="text" title="tel" placeholder="Enter MobileNo." id="phone" required>
                             </div>
                             <div>
-                                <label for="phone">MobileNo</label>
-                                <input type="tel" title="tel" placeholder="Enter MobileNo." id="phone" required>
-                            </div>
-                            <div>
-                                <label for="message">Message</label>
                                 <textarea name="message" id="message" placeholder="Message" required></textarea>
                             </div>
                         </div>
                         <div class="send-btn">
-                            <button type="submit">Send</button>
+                            <button id="mail-btn" type="submit" value="Send Email">Send</button>
                         </div>
                     </form>
                 </div>
@@ -331,6 +324,13 @@
 </body>
 <!-- Javascript files -->
 <script src="app.js"></script>
+
+<!-- Js for emailing system -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    emailjs.init('73wlvf7O6gXYjxfRu')
+</script>
 
 </html>
 

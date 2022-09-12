@@ -62,3 +62,31 @@ spans.forEach((span, idx) => {
     span.classList.add("active");
   }, 750 * (idx + 2));
 });
+
+// Mailing system js
+
+const btn = document.getElementById("mail-btn");
+
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  btn.value = "Sending...";
+
+  const serviceID = "service_q1adlos";
+  const templateID = "template_lyi7j5d";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      btn.value = "Send Email";
+      alert("Thank you I received your mail!");
+    },
+    (err) => {
+      btn.value = "Send Email";
+      alert(JSON.stringify(err));
+    }
+  );
+  document.getElementById("from_name").value = "";
+  document.getElementById("email_id").value = "";
+  document.getElementById("message").value = "";
+  document.getElementById("phone").value = "";
+});
