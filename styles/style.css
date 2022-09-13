@@ -680,6 +680,7 @@ main .section .techLogoes .skills .logo {
   align-items: center;
   height: 200px;
   background-color: var(--color-secondary);
+  border: 2px solid var(--color-grey-6);
   border-radius: 10px;
   transition: 0.2s ease-in-out;
   position: relative;
