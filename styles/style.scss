@@ -26,6 +26,7 @@ cursive;
   --glass-color: #ffffff26;
   --glass-color2: #2525256b;
   --glass-color3: #3d0042;
+  --glass-color4: #3d004295;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 17px rgba(0, 0, 0, 0.5);
 }
@@ -61,7 +62,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem 10rem;
 }
 .section {
   transform: translateY(-100%) scale(0);
@@ -265,7 +266,7 @@ main > .active {
   .right-header {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-right: 5rem;
     #greet {
       font-size: 3rem;
@@ -413,7 +414,7 @@ main > .active {
       width: 60%;
       text-align: center;
       a {
-        font-size: 5rem;
+        font-size: 2rem;
         position: relative;
         .fa-linkedin {
           color: #0a66c2;
@@ -541,6 +542,7 @@ main {
       color: var(--color-white);
       text-shadow: 0 0 10px var(--color-black);
       background-color: var(--color-grey-5);
+      line-height: 2rem;
       padding: 2rem 2.5rem;
       border-radius: 2rem;
 
@@ -559,12 +561,13 @@ main {
     .experience {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      width: 60%;
+      width: 70%;
+      grid-gap: 1.2rem;
       margin: auto;
       margin-top: 3rem;
       text-align: center;
       .ex-box {
-        width: 90%;
+        width: 100%;
         height: 120px;
         border: 2px solid var(--color-white);
         display: flex;
@@ -618,6 +621,7 @@ main {
       .education-block {
         width: 100%;
         display: grid;
+        grid-gap: 2rem;
         grid-template-columns: repeat(3, 1fr);
         color: var(--color-white);
         text-shadow: 0 0 10px var(--color-grey-6);
@@ -829,6 +833,80 @@ main {
         }
       }
     }
+
+    // Portfolio section of main section
+    .portfo_container {
+      width: 100%;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .portfo_grid_cont {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        .grid_box {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          background-color: #00ffd5a3;
+          border-radius: 10px;
+          border: 2px solid #0000002b;
+          transition: all 0.3s ease;
+          overflow: hidden;
+          &:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border: 2px solid var(--color-white);
+            background-color: #00ffd5b6;
+            img {
+              border: 2px solid var(--color-grey-5);
+              transform: scale(0.7);
+            }
+          }
+          cursor: pointer;
+          .prtf_img_sec {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            padding-bottom: 0;
+
+            img {
+              width: 100%;
+              height: 170px;
+              border-radius: 10px;
+              transition: all 0.3s ease;
+            }
+          }
+          .prtf_detail {
+            width: 100%;
+            padding: 1.2rem;
+            color: var(--color-white);
+            text-shadow: var(--box-shadow-1);
+            h4 {
+              font-weight: 500;
+              font-size: 1.2rem;
+            }
+            p {
+              font-weight: 500;
+              color: var(--color-grey-6);
+              font-size: 1rem;
+              padding: 0.5rem;
+              word-spacing: 0.7px;
+              a {
+                color: var(--color-secondary);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -845,3 +923,24 @@ main {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid #ffffff8b;
 }
+
+.softSkill {
+  position: absolute;
+  bottom: 18%;
+  right: 14%;
+  p {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #7b0986;
+    font-weight: 600;
+    opacity: 0.6;
+    span + span {
+      border-left: 2px solid var(--color-grey-5);
+      padding: 0 0.4rem;
+    }
+  }
+}
+
+// Media Query...
+
+@import "./media";
