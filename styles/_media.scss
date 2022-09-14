@@ -42,10 +42,10 @@
       width: 100%;
       margin: auto;
       #greet {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         position: absolute;
         z-index: 100;
-        top: 35%;
+        top: 40%;
         transform: translateX(40%);
         padding: 0;
       }
@@ -295,10 +295,10 @@
       width: 100%;
       margin: auto;
       #greet {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         position: absolute;
         z-index: 100;
-        top: 40%;
+        top: 45%;
         transform: translateX(70%);
         padding: 0;
       }
@@ -546,10 +546,11 @@
       display: flex;
       flex-direction: column;
       padding-top: 5rem;
+      margin-top: 5rem;
       padding-right: 0;
       #greet {
-        font-size: 2rem;
-        padding: 1.5rem 0;
+        font-size: 2.4rem;
+        padding: 1.3rem 0;
         color: var(--color-white);
         font-weight: 400;
         font-family: "Anton", sans-serif;
@@ -780,8 +781,9 @@
       display: flex;
       flex-direction: column;
       padding-top: 5rem;
+      margin-top: 5rem;
       padding-right: 0;
-      margin-left: -1.5rem;
+      margin-left: -2.7rem;
 
       // Social medias icon styling
     }
@@ -792,7 +794,7 @@
     position: fixed;
     z-index: 1;
     top: 50%;
-    right: 1%;
+    right: 2%;
     transform: translateY(-50%);
 
     .control {

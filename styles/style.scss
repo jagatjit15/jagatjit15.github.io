@@ -13,7 +13,10 @@ cursive;
 
 :root {
   --color-primary: #9c9c9c;
+  // --color-primary: #f3d250c7;
+  // --color-primary: #a1c3d1;
   --color-secondary: #7b0986;
+  // --color-secondary: #5da2d5;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-sec2: #095faada;
@@ -253,9 +256,10 @@ main > .active {
         height: 100%;
         object-fit: cover;
         transition: all 1s ease-in-out;
-        filter: grayscale(100%);
+        filter: grayscale(0);
         &:hover {
-          filter: grayscale(0);
+          filter: grayscale(100%);
+          cursor: pointer;
         }
       }
     }
@@ -268,9 +272,10 @@ main > .active {
     flex-direction: column;
     padding-top: 5rem;
     padding-right: 5rem;
+    margin-top: 4rem;
     #greet {
       font-size: 3rem;
-      padding-bottom: 1.5rem;
+      padding-bottom: 1.2rem;
       color: var(--color-white);
       font-weight: 400;
       font-family: "Anton", sans-serif;
@@ -278,7 +283,7 @@ main > .active {
     }
     #profession {
       font-size: 1.7rem;
-      padding: 0 1rem;
+      padding: 1rem 1rem;
       width: 60%;
       text-align: center;
       color: var(--color-white);
@@ -295,9 +300,9 @@ main > .active {
     .word span {
       cursor: pointer;
       display: inline-block;
-      font-size: 7rem;
+      font-size: 7.4rem;
       user-select: none;
-      line-height: 0.8;
+      line-height: 1;
       &:hover {
         color: var(--color-grey-5);
       }
@@ -652,18 +657,21 @@ main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
-        width: 70%;
+        width: 60%;
         .logo {
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 200px;
+          height: 170px;
           background-color: var(--color-secondary);
           border: 2px solid var(--color-grey-6);
           border-radius: 10px;
           transition: 0.2s ease-in-out;
           position: relative;
           overflow: hidden;
+          h1 {
+            font-size: 4rem;
+          }
           &:hover {
             cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -722,6 +730,30 @@ main {
                   content: "75%";
                   background-color: #0000008d;
                 }
+              }
+            }
+          }
+          &:nth-child(7) {
+            &:hover {
+              &::after {
+                content: "45%";
+                background-color: #000000a9;
+              }
+            }
+          }
+          &:nth-child(8) {
+            &:hover {
+              &::after {
+                content: "75%";
+                background-color: #000000a1;
+              }
+            }
+          }
+          &:nth-child(9) {
+            &:hover {
+              &::after {
+                content: "80%";
+                background-color: #000000a1;
               }
             }
           }
@@ -927,7 +959,7 @@ main {
 
 .softSkill {
   position: absolute;
-  bottom: 18%;
+  bottom: 16%;
   right: 14%;
   p {
     text-transform: uppercase;

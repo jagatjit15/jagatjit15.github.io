@@ -255,20 +255,22 @@ main > .active {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 1s ease-in-out;
-  filter: grayscale(100%);
+  filter: grayscale(0);
 }
 .header-content .left-header .image img:hover {
-  filter: grayscale(0);
+  filter: grayscale(100%);
+  cursor: pointer;
 }
 .header-content .right-header {
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
   padding-right: 5rem;
+  margin-top: 4rem;
 }
 .header-content .right-header #greet {
   font-size: 3rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
   color: var(--color-white);
   font-weight: 400;
   font-family: "Anton", sans-serif;
@@ -276,7 +278,7 @@ main > .active {
 }
 .header-content .right-header #profession {
   font-size: 1.7rem;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   width: 60%;
   text-align: center;
   color: var(--color-white);
@@ -292,12 +294,12 @@ main > .active {
 .header-content .right-header .word span {
   cursor: pointer;
   display: inline-block;
-  font-size: 7rem;
+  font-size: 7.4rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  line-height: 0.8;
+  line-height: 1;
 }
 .header-content .right-header .word span:hover {
   color: var(--color-grey-5);
@@ -672,19 +674,22 @@ main .section .techLogoes .skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  width: 70%;
+  width: 60%;
 }
 main .section .techLogoes .skills .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 170px;
   background-color: var(--color-secondary);
   border: 2px solid var(--color-grey-6);
   border-radius: 10px;
   transition: 0.2s ease-in-out;
   position: relative;
   overflow: hidden;
+}
+main .section .techLogoes .skills .logo h1 {
+  font-size: 4rem;
 }
 main .section .techLogoes .skills .logo:hover {
   cursor: pointer;
@@ -721,6 +726,18 @@ main .section .techLogoes .skills .logo:hover:nth-child(5):hover::after {
 main .section .techLogoes .skills .logo:hover:nth-child(6):hover::after {
   content: "75%";
   background-color: rgba(0, 0, 0, 0.5529411765);
+}
+main .section .techLogoes .skills .logo:nth-child(7):hover::after {
+  content: "45%";
+  background-color: rgba(0, 0, 0, 0.662745098);
+}
+main .section .techLogoes .skills .logo:nth-child(8):hover::after {
+  content: "75%";
+  background-color: rgba(0, 0, 0, 0.631372549);
+}
+main .section .techLogoes .skills .logo:nth-child(9):hover::after {
+  content: "80%";
+  background-color: rgba(0, 0, 0, 0.631372549);
 }
 main .section .techLogoes .skills .logo img {
   width: 100px;
@@ -920,7 +937,7 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
 
 .softSkill {
   position: absolute;
-  bottom: 18%;
+  bottom: 16%;
   right: 14%;
 }
 .softSkill p {
@@ -982,10 +999,10 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
     margin: auto;
   }
   .header-content .right-header #greet {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     position: absolute;
     z-index: 100;
-    top: 35%;
+    top: 40%;
     transform: translateX(40%);
     padding: 0;
   }
@@ -1209,10 +1226,10 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
     margin: auto;
   }
   .header-content .right-header #greet {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     position: absolute;
     z-index: 100;
-    top: 40%;
+    top: 45%;
     transform: translateX(70%);
     padding: 0;
   }
@@ -1430,11 +1447,12 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+    margin-top: 5rem;
     padding-right: 0;
   }
   .header-content .right-header #greet {
-    font-size: 2rem;
-    padding: 1.5rem 0;
+    font-size: 2.4rem;
+    padding: 1.3rem 0;
     color: var(--color-white);
     font-weight: 400;
     font-family: "Anton", sans-serif;
@@ -1630,8 +1648,9 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+    margin-top: 5rem;
     padding-right: 0;
-    margin-left: -1.5rem;
+    margin-left: -2.7rem;
   }
   .controlls {
     -webkit-user-select: none;
@@ -1641,7 +1660,7 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
     position: fixed;
     z-index: 1;
     top: 50%;
-    right: 1%;
+    right: 2%;
     transform: translateY(-50%);
   }
   .controlls .control {
