@@ -74,21 +74,17 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   btn.value = "Sending...";
 
-  const serviceID = "service_q1adlos";
-  const templateID = "template_lyi7j5d";
+  const serviceID = "service_t5rnd9p";
+  const templateID = "template_g0330edcd";
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
       btn.value = "Send Email";
-      alert("Thank you I received your mail!");
+      alert("Sent!");
     },
     (err) => {
       btn.value = "Send Email";
       alert(JSON.stringify(err));
     }
   );
-  document.getElementById("from_name").value = "";
-  document.getElementById("email_id").value = "";
-  document.getElementById("message").value = "";
-  document.getElementById("phone").value = "";
 });
