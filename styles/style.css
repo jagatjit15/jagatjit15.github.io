@@ -11,8 +11,8 @@ font-family: 'Press Start 2P',
 cursive;
 */
 :root {
-  --color-primary: #9c9c9c;
-  --color-secondary: #7b0986;
+  --color-primary: #9a9a9a;
+  --color-secondary: #083044;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-sec2: #095faada;
@@ -257,10 +257,6 @@ main > .active {
   transition: all 1s ease-in-out;
   filter: grayscale(0);
 }
-.header-content .left-header .image img:hover {
-  filter: grayscale(100%);
-  cursor: pointer;
-}
 .header-content .right-header {
   display: flex;
   flex-direction: column;
@@ -274,7 +270,6 @@ main > .active {
   color: var(--color-white);
   font-weight: 400;
   font-family: "Anton", sans-serif;
-  text-shadow: 0 0 10px var(--color-grey-6);
 }
 .header-content .right-header #profession {
   font-size: 1.7rem;
@@ -283,13 +278,11 @@ main > .active {
   text-align: center;
   color: var(--color-white);
   font-weight: 500;
-  text-shadow: 0 0 10px var(--color-grey-6);
 }
 .header-content .right-header .word {
   font-family: "Anton", sans-serif;
   perspective: 1000px;
   color: var(--color-secondary);
-  text-shadow: 0px 0px 50px var(--color-white);
 }
 .header-content .right-header .word span {
   cursor: pointer;
@@ -538,31 +531,10 @@ main .section .m-h-title {
 main .section .m-h-title ._title {
   font-weight: 600;
   font-size: 5rem;
+  color: var(--color-white);
   text-transform: uppercase;
   transition: all 1.2s ease-in-out;
   text-shadow: 0 0 5px var(--color-black);
-}
-main .section .m-h-title ._title .t-1 {
-  color: var(--color-secondary);
-  -webkit-text-decoration: underline var(--color-white);
-          text-decoration: underline var(--color-white);
-  transition: all 1.2s ease-in-out;
-}
-main .section .m-h-title ._title .t-2 {
-  color: var(--color-white);
-  -webkit-text-decoration: underline var(--color-secondary);
-          text-decoration: underline var(--color-secondary);
-  transition: all 1.2s ease-in-out;
-}
-main .section .m-h-title ._title:hover .t-1 {
-  color: var(--color-white);
-  -webkit-text-decoration: underline var(--color-secondary);
-          text-decoration: underline var(--color-secondary);
-}
-main .section .m-h-title ._title:hover .t-2 {
-  color: var(--color-secondary);
-  -webkit-text-decoration: underline var(--color-white);
-          text-decoration: underline var(--color-white);
 }
 main .section .bio-data {
   -webkit-user-select: none;
@@ -583,7 +555,8 @@ main .section .bio-data {
 main .section .bio-data p q span {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: var(--color-secondary);
+  -webkit-text-decoration-color: var(--color-grey-2);
+          text-decoration-color: var(--color-grey-2);
 }
 main .section .experience {
   display: grid;
@@ -708,35 +681,35 @@ main .section .techLogoes .skills .logo:hover::after {
   align-items: center;
 }
 main .section .techLogoes .skills .logo:hover:nth-child(1):hover::after {
-  content: "66%";
+  content: "JAVA";
 }
 main .section .techLogoes .skills .logo:hover:nth-child(2):hover::after {
-  content: "60%";
+  content: "MySQL";
 }
 main .section .techLogoes .skills .logo:hover:nth-child(3):hover::after {
-  content: "70%";
+  content: "SpringBoot";
 }
 main .section .techLogoes .skills .logo:hover:nth-child(4):hover::after {
-  content: "79%";
+  content: "JavaScript";
 }
 main .section .techLogoes .skills .logo:hover:nth-child(5):hover::after {
-  content: "80%";
+  content: "HTML";
   background-color: rgba(0, 0, 0, 0.5529411765);
 }
 main .section .techLogoes .skills .logo:hover:nth-child(6):hover::after {
-  content: "75%";
+  content: "CSS";
   background-color: rgba(0, 0, 0, 0.5529411765);
 }
 main .section .techLogoes .skills .logo:nth-child(7):hover::after {
-  content: "45%";
+  content: "SASS";
   background-color: rgba(0, 0, 0, 0.662745098);
 }
 main .section .techLogoes .skills .logo:nth-child(8):hover::after {
-  content: "75%";
+  content: "Data Structure";
   background-color: rgba(0, 0, 0, 0.631372549);
 }
 main .section .techLogoes .skills .logo:nth-child(9):hover::after {
-  content: "80%";
+  content: "API";
   background-color: rgba(0, 0, 0, 0.631372549);
 }
 main .section .techLogoes .skills .logo img {
@@ -937,8 +910,8 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
 
 .softSkill {
   position: absolute;
-  bottom: 16%;
-  right: 14%;
+  bottom: 13%;
+  right: 14.2%;
 }
 .softSkill p {
   text-transform: uppercase;
