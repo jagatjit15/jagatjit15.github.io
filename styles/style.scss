@@ -931,21 +931,11 @@ main {
   border: 1px solid #ffffff8b;
 }
 
-.softSkill {
-  position: absolute;
-  bottom: 13%;
-  right: 14.2%;
-  p {
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    color: #7b0986;
-    font-weight: 600;
-    opacity: 0.6;
-    span + span {
-      border-left: 2px solid var(--color-grey-5);
-      padding: 0 0.4rem;
-    }
-  }
+.github_stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 // Media Query...

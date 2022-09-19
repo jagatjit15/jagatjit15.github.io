@@ -246,7 +246,13 @@
       }
     }
   }
-  .softSkill {
+  .github_stats {
+    display: none;
+  }
+}
+
+@media all and (min-width: 450px) and (max-width: 550px) {
+  .github_stats {
     display: none;
   }
 }

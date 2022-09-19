@@ -908,21 +908,11 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
   border: 1px solid rgba(255, 255, 255, 0.5450980392);
 }
 
-.softSkill {
-  position: absolute;
-  bottom: 13%;
-  right: 14.2%;
-}
-.softSkill p {
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  color: #7b0986;
-  font-weight: 600;
-  opacity: 0.6;
-}
-.softSkill p span + span {
-  border-left: 2px solid var(--color-grey-5);
-  padding: 0 0.4rem;
+.github_stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 @media all and (min-width: 250px) and (max-width: 450px) {
@@ -1148,7 +1138,12 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
   main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail {
     padding: 1rem;
   }
-  .softSkill {
+  .github_stats {
+    display: none;
+  }
+}
+@media all and (min-width: 450px) and (max-width: 550px) {
+  .github_stats {
     display: none;
   }
 }
