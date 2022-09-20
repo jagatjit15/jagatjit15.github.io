@@ -246,13 +246,13 @@
       }
     }
   }
-  .github_stats {
+  .calendar {
     display: none;
   }
 }
 
 @media all and (min-width: 450px) and (max-width: 550px) {
-  .github_stats {
+  .calendar {
     display: none;
   }
 }
@@ -506,8 +506,9 @@
       }
     }
   }
-  .softSkill {
-    display: none;
+  svg {
+    width: 570px;
+    height: 112px;
   }
 }
 
@@ -759,10 +760,12 @@
       }
     }
   }
-  .softSkill {
-    p {
-      color: var(--color-white);
-    }
+  svg {
+    width: 100%;
+    height: 112px;
+  }
+  .width-full {
+    display: none;
   }
 }
 
@@ -932,5 +935,10 @@
         }
       }
     }
+  }
+  .calendar {
+    width: 800px;
+    display: block;
+    margin: auto;
   }
 }

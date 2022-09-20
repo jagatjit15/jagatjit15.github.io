@@ -908,13 +908,6 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
   border: 1px solid rgba(255, 255, 255, 0.5450980392);
 }
 
-.github_stats {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
 @media all and (min-width: 250px) and (max-width: 450px) {
   body {
     display: block;
@@ -1138,12 +1131,12 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
   main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail {
     padding: 1rem;
   }
-  .github_stats {
+  .calendar {
     display: none;
   }
 }
 @media all and (min-width: 450px) and (max-width: 550px) {
-  .github_stats {
+  .calendar {
     display: none;
   }
 }
@@ -1371,8 +1364,9 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
   main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail {
     padding: 1rem;
   }
-  .softSkill {
-    display: none;
+  svg {
+    width: 570px;
+    height: 112px;
   }
 }
 @media all and (min-width: 650px) and (max-width: 950px) {
@@ -1595,8 +1589,12 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
   main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail {
     padding: 1rem;
   }
-  .softSkill p {
-    color: var(--color-white);
+  svg {
+    width: 100%;
+    height: 112px;
+  }
+  .width-full {
+    display: none;
   }
 }
 @media all and (min-width: 950px) and (max-width: 1180px) {
@@ -1746,5 +1744,10 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
   }
   main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
     color: var(--color-secondary);
+  }
+  .calendar {
+    width: 800px;
+    display: block;
+    margin: auto;
   }
 }/*# sourceMappingURL=style.css.map */
