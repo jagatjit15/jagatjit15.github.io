@@ -1364,9 +1364,9 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
   main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail {
     padding: 1rem;
   }
-  svg {
-    width: 570px;
-    height: 112px;
+  .calendar {
+    display: none;
+    visibility: hidden;
   }
 }
 @media all and (min-width: 650px) and (max-width: 950px) {
