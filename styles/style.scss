@@ -207,6 +207,13 @@ main > .active {
         }
       }
     }
+    &:nth-child(6) {
+      &:hover {
+        &::after {
+          content: "Resume";
+        }
+      }
+    }
   }
 }
 

@@ -203,6 +203,9 @@ main > .active {
 .controlls .control:nth-child(5):hover::after {
   content: "Contact";
 }
+.controlls .control:nth-child(6):hover::after {
+  content: "Resume";
+}
 
 .header-content {
   -webkit-user-select: none;
@@ -995,7 +998,7 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
     top: auto;
     bottom: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
     width: 80%;
   }
@@ -1229,7 +1232,7 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
     top: auto;
     bottom: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
     width: 80%;
   }
@@ -1446,7 +1449,7 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
     top: auto;
     bottom: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
     width: 80%;
     margin-bottom: -1rem;
@@ -1692,7 +1695,7 @@ main .section .contact_Container .mail_cont .adrs_field div span address a {
     top: auto;
     bottom: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
     width: 80%;
   }
