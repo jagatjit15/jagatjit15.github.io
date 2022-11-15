@@ -24,7 +24,7 @@ cursive;
   --color-grey-6: #12181b;
   --glass-color: #ffffff26;
   --glass-color2: #2525256b;
-  --glass-color3: #3d0042;
+  --glass-color3: #093043b2;
   --glass-color4: #3d004295;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 17px rgba(0, 0, 0, 0.5);
@@ -533,7 +533,7 @@ main .section .m-h-title {
 }
 main .section .m-h-title ._title {
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--color-white);
   text-transform: uppercase;
   transition: all 1.2s ease-in-out;
@@ -550,16 +550,9 @@ main .section .bio-data {
   font-weight: 600;
   color: var(--color-white);
   text-shadow: 0 0 10px var(--color-black);
-  background-color: var(--color-grey-5);
   line-height: 2rem;
   padding: 2rem 2.5rem;
   border-radius: 2rem;
-}
-main .section .bio-data p q span {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: var(--color-grey-2);
-          text-decoration-color: var(--color-grey-2);
 }
 main .section .experience {
   display: grid;
@@ -593,12 +586,12 @@ main .section .experience .ex-box:hover {
 main .section .experience .ex-box p {
   font-weight: 400;
   font-size: 1rem;
-  color: #f77737;
+  color: #ffffff;
 }
 main .section .experience .ex-box h3 {
   font-weight: 700;
   font-size: 1.7rem;
-  color: #0570e6;
+  color: #ffffff;
 }
 main .section .educations {
   width: 100%;
@@ -846,7 +839,7 @@ main .section .portfo_container .portfo_grid_cont .grid_box {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  background-color: rgba(0, 255, 213, 0.6392156863);
+  background-color: var(--color-secondary);
   border-radius: 10px;
   border: 2px solid rgba(0, 0, 0, 0.168627451);
   transition: all 0.3s ease;
@@ -856,7 +849,6 @@ main .section .portfo_container .portfo_grid_cont .grid_box {
 main .section .portfo_container .portfo_grid_cont .grid_box:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border: 2px solid var(--color-white);
-  background-color: rgba(0, 255, 213, 0.7137254902);
 }
 main .section .portfo_container .portfo_grid_cont .grid_box:hover img {
   border: 2px solid var(--color-grey-5);
@@ -889,13 +881,13 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail h4 {
 }
 main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p {
   font-weight: 500;
-  color: var(--color-grey-6);
+  color: #ffffff;
   font-size: 1rem;
   padding: 0.5rem;
   word-spacing: 0.7px;
 }
 main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
-  color: var(--color-secondary);
+  color: #ffffff;
 }
 
 .sec4,

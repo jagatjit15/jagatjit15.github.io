@@ -28,7 +28,7 @@ cursive;
   --color-grey-6: #12181b;
   --glass-color: #ffffff26;
   --glass-color2: #2525256b;
-  --glass-color3: #3d0042;
+  --glass-color3: #093043b2;
   --glass-color4: #3d004295;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 17px rgba(0, 0, 0, 0.5);
@@ -512,7 +512,7 @@ main {
       margin-bottom: 1.5rem;
       ._title {
         font-weight: 600;
-        font-size: 5rem;
+        font-size: 4rem;
         color: var(--color-white);
         text-transform: uppercase;
         transition: all 1.2s ease-in-out;
@@ -527,19 +527,10 @@ main {
       font-weight: 600;
       color: var(--color-white);
       text-shadow: 0 0 10px var(--color-black);
-      background-color: var(--color-grey-5);
+      // background-color: var(--color-grey-5);
       line-height: 2rem;
       padding: 2rem 2.5rem;
       border-radius: 2rem;
-
-      p {
-        q {
-          span {
-            text-decoration-line: underline;
-            text-decoration-color: var(--color-grey-2);
-          }
-        }
-      }
     }
 
     // experience section of about section
@@ -577,12 +568,12 @@ main {
         p {
           font-weight: 400;
           font-size: 1rem;
-          color: #f77737;
+          color: #ffffff;
         }
         h3 {
           font-weight: 700;
           font-size: 1.7rem;
-          color: #0570e6;
+          color: #ffffff;
         }
       }
     }
@@ -864,7 +855,7 @@ main {
           width: 100%;
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          background-color: #00ffd5a3;
+          background-color: var(--color-secondary);
           border-radius: 10px;
           border: 2px solid #0000002b;
           transition: all 0.3s ease;
@@ -875,7 +866,6 @@ main {
               rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
               rgba(0, 0, 0, 0.09) 0px -3px 5px;
             border: 2px solid var(--color-white);
-            background-color: #00ffd5b6;
             img {
               border: 2px solid var(--color-grey-5);
               transform: scale(0.7);
@@ -909,12 +899,12 @@ main {
             }
             p {
               font-weight: 500;
-              color: var(--color-grey-6);
+              color: #ffffff;
               font-size: 1rem;
               padding: 0.5rem;
               word-spacing: 0.7px;
               a {
-                color: var(--color-secondary);
+                color: #ffffff;
               }
             }
           }
