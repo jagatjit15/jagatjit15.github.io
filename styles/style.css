@@ -890,6 +890,10 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p {
 main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
   color: #ffffff;
 }
+main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail #tstack > span {
+  font-weight: 600;
+  font-style: italic;
+}
 
 .sec4,
 .sec2,
