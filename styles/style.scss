@@ -895,14 +895,15 @@ main {
             text-shadow: var(--box-shadow-1);
             h4 {
               font-weight: 500;
-              font-size: 1.2rem;
+              font-size: 1.4rem;
             }
             p {
-              font-weight: 500;
+              font-weight: normal;
               color: #ffffff;
               font-size: 1rem;
               padding: 0.5rem;
               word-spacing: 0.7px;
+              letter-spacing: 1px;
               a {
                 color: #ffffff;
               }

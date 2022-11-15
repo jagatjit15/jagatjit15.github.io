@@ -877,14 +877,15 @@ main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail {
 }
 main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail h4 {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p {
-  font-weight: 500;
+  font-weight: normal;
   color: #ffffff;
   font-size: 1rem;
   padding: 0.5rem;
   word-spacing: 0.7px;
+  letter-spacing: 1px;
 }
 main .section .portfo_container .portfo_grid_cont .grid_box .prtf_detail p a {
   color: #ffffff;
